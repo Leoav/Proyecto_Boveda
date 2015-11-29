@@ -1,14 +1,3 @@
-/**
- * Basic Use.
- * by Jean Pierre Charalambos.
- * 
- * This example illustrates a direct approach to use proscene by Scene proper
- * instantiation.
- * 
- * Press 'h' to display the key shortcuts and mouse bindings in the console.
- */
-
-
 
 import remixlab.proscene.*;
 
