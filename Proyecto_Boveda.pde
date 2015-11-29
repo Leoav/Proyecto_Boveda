@@ -3,7 +3,7 @@ import remixlab.proscene.*;
 
 Scene scene;
 Astro e;
-
+  
 void setup() {
   size(640, 360, P3D);
   scene = new Scene(this);
@@ -15,7 +15,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(0);
   fill(204, 102, 0, 150);
   pushMatrix();
       e.display();

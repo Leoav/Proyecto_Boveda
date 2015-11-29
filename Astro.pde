@@ -40,9 +40,10 @@ class Astro{
     x = cos(radians(angle1()))*radius()*sin(radians(angle2()));
     y = sin(radians(angle1()))*radius()*cos(radians(angle2()));
     z = cos(radians(angle1()))*radius();
-    fill(255, 0, 0);
+    fill(255, 255, 255);
     translate(x,y,z);
-    scale(10);
+    scale(2);
+    noStroke();
     sphere(1);
     
     
