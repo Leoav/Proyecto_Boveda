@@ -19,32 +19,29 @@ class Astro{
   float radius(){
     return rad;
   }
+  
   void setangle(float a){
-    angl1=a;  
+    angl1 = a;  
   }
+  
   float angle1(){
     return angl1;
   } 
+  
   void setangle2(float a){
-    angl2=a;  
+    angl2 = a;  
   }
+  
   float angle2(){
     return angl2;
   }
 
   void display() {
-    background (0);
-    translate(width/2, height/2, -50);
-    pushMatrix();
-    lights();
-    fill(10,23,41);
-    sphere(20);
-    popMatrix();
     x = cos(radians(angle1()))*radius()*sin(radians(angle2()));
     y = sin(radians(angle1()))*radius()*cos(radians(angle2()));
     z = cos(radians(angle1()))*radius();
     fill(255, 0, 0);
-    translate(x, y , z);
+    translate(x,y,z);
     scale(10);
     sphere(1);
     

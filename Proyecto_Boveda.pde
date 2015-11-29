@@ -1,16 +1,42 @@
-Astro ast;
+/**
+ * Basic Use.
+ * by Jean Pierre Charalambos.
+ * 
+ * This example illustrates a direct approach to use proscene by Scene proper
+ * instantiation.
+ * 
+ * Press 'h' to display the key shortcuts and mouse bindings in the console.
+ */
+
+
+
+import remixlab.proscene.*;
+
+Scene scene;
+Astro e;
 
 void setup() {
-  size(400, 400, P3D);
-  background(255);
-  //smooth();
-  noStroke();
-  ast=new Astro();
-  ast.setangle(270);
-  ast.setangle2(90);
+  size(640, 360, P3D);
+  scene = new Scene(this);
+  e = new Astro();
+  e.setradius(110);
+  e.setangle(70);
+  e.setangle2(270);
+  scene.eyeFrame().setDamping(0);
 }
-void draw(){
-  ast.setradius(50);
-  
-  ast.display();
+
+void draw() {
+  background(255);
+  fill(204, 102, 0, 150);
+  pushMatrix();
+      e.display();
+  popMatrix();
+}
+
+void keyPressed() {
+  if(scene.eyeFrame().damping() == 0)
+    scene.eyeFrame().setDamping(0.5);
+  else
+    scene.eyeFrame().setDamping(0);
+  println("Camera damping friction now is " + scene.eyeFrame().damping());
 }
