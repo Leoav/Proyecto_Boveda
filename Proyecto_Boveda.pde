@@ -2,7 +2,6 @@
 import remixlab.proscene.*;
 
 Scene scene;
-
 Astro e;
   
 void setup() {
@@ -13,10 +12,7 @@ void setup() {
   e.setangle(70);
   e.setangle2(270);
   scene.eyeFrame().setDamping(0);
-   
-       
 }
-
 
 void draw() {
   background(0);
