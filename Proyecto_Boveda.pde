@@ -61,10 +61,10 @@ void draw() {
 void keyPressed() {
 
  
- if(key==CODED && keyCode==RIGHT){
+ if(key==CODED && keyCode==SHIFT){
    Condicion++;
  }
- if(key==CODED && keyCode==LEFT){
+ if(key==CODED && keyCode==ALT){
    Condicion--;
  }
  if(key==CODED && keyCode==CONTROL){
