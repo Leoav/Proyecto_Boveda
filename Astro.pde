@@ -84,7 +84,7 @@ class Astro{
     z = cos(radians(angle1()))*radius();
     fill(255, 255, 255);
     translate(x,y,z);
-    scale(2);
+    scale(5);
     noStroke();
     sphere(1); 
 }
@@ -95,17 +95,7 @@ void display2(){
     z = cos(radians(angle1()))*radius();
     fill(255, 0, 0);
     translate(x,y,z);
-    ellipse(0,0,7,7);
+    ellipse(0,0,10,10);
   }
   
 }
-
-//int Condicion=0;
-//void keyPressed(){
-//  if(key==CODED && keyCode==RIGHT){
-//    Condicion++;
-//  }
-//  if(key==CODED && keyCode==LEFT){
-//    Condicion--;
-//  }  
-//}
