@@ -1,13 +1,20 @@
 
 import remixlab.proscene.*;
+import shapes3d.utils.*;
+import shapes3d.animation.*;
+import shapes3d.*;
+
 
 Scene scene;
 Astro e, f;
 
 int Condicion=0;
+
   
 void setup() {
   size(640, 360, P3D);
+ 
+  
   scene = new Scene(this);
   e = new Astro();
   e.setradius(110);
@@ -33,7 +40,9 @@ f = new Astro();
 
 void draw() {
   background(0);
-  fill(204, 102, 0, 150);
+  lights();
+  fill(0,0,255);
+  sphere(20);
   pushMatrix();
       e.display();
       popMatrix();

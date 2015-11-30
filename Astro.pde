@@ -78,6 +78,7 @@ class Astro{
   }
 
   void display() {
+    lights();
     x = cos(radians(angle1()))*radius()*sin(radians(angle2()));
     y = sin(radians(angle1()))*radius()*cos(radians(angle2()));
     z = cos(radians(angle1()))*radius();
